@@ -1,0 +1,381 @@
+* {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+
+}
+body {
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(138,130,130,1.00)),color-stop( 100% , rgba(37,34,34,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(138,130,130,1.00) 0%,rgba(37,34,34,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(138,130,130,1.00) 0%,rgba(37,34,34,1.00) 100%);
+}
+#BodySeriesPeliculasP {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 500px;
+	height: 1000px;
+	background-color: #666666;
+}
+
+#headerPrincipal {
+	position: relative;
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	height: 431px;
+	margin-bottom: 10px;
+
+}
+#DivPeliculaPrincipal   {
+	width: 977px;
+	background-image: url('Imagenes/PeliculaP.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 431px;
+	position: absolute;
+	border-radius: 1% / 2.5%;
+}
+
+#DivdeEncabezado {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	opacity: 0.95;
+	min-width: 550px;
+	background-repeat: repeat-x;
+	background-image: url(Imagenes/Cabecera.jpg);
+	background-size: auto 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+#ImagenLogo {
+	width: 90px;
+}
+#TituloPagina {
+	color: #FFFF33;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: lighter;
+	font-size: 25pt;
+	text-align: center;
+	display: block;
+	width: 250px;
+	margin-left: 90px;
+	margin-top: -52px;
+}
+#DivLogoNombre {
+	margin-left: auto;
+	height: 50px;
+	margin-right: auto;
+	max-width: 1000px;
+}
+#DivEnlaceEncabezado {
+	width: 210px;
+	text-align: center;
+	float: right;
+	margin-top: -25px;
+}
+#DivEnlaceEncabezado a {
+	padding-right: 8px;
+	padding-left: 9px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#DivEnlaceEncabezado a:hover {
+	color: #FF9933;
+}
+#DivDescripcionPelicula {
+	background-color: #000000;
+	opacity: 0.8;
+	width: 490px;
+	height: 216px;
+	margin-left: 5%;
+	margin-top: 18%;
+	border-radius: 4px / 2px;
+}
+#DivDescripcionPelicula h2 {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-variant: normal;
+	font-style: italic;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#DivDescripcionPelicula p {
+	color: #FFFFFF;
+	text-align: center;
+}
+#SectionPrincipal {
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(180,172,172,1.00)),color-stop( 100% , rgba(73,65,65,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#SectionSeriesPeliculas {
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 70%;
+	position: relative;
+}
+#DivSectionSeriesPeliculas {
+	width: 977px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(180,172,172,1.00)),color-stop( 100% , rgba(73,65,65,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 70%;
+	margin-bottom: 10px;
+}
+.DivSeriesPeliculas {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: visible;
+	margin-top: -8px;
+	margin-bottom: 10px;
+}
+.APeliculasSeries {
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	margin-left: 24.425px;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
+	display: inline-block;
+	padding-bottom: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15pt;
+}
+#SpamEnlaces {
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	margin-left: 24.425px;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
+	display: inline-block;
+	padding-bottom: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15pt;
+}
+.APeliculasSeries:hover {
+	color: #FF9900;
+
+}
+
+
+.ImgPeliculasSeries:hover {
+	-webkit-box-shadow: 3px 3px 3px #999999;
+	box-shadow: 3px 3px 3px #999999;
+}
+
+.ImgPeliculasSeries {
+	height: 188px;
+	margin-top: 7px;
+	margin-left: 6px;
+	border-radius: 7px;
+	-webkit-box-shadow: 0px 0px 0px #999999;
+	box-shadow: 0px 0px 0px #999999;
+}
+.ImgPeliculasSeries:active {
+	-webkit-box-shadow: 0px 0px 0px #CCCCCC;
+	box-shadow: 0px 0px 0px #CCCCCC;
+}
+#headerPeliculasSeries {
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 100%;
+	border-top-style: solid;
+}
+#headerPeliculasSeries h2 {
+	color: #FFCC00;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 50pt;
+	text-align: center;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(148,138,138,1.00)),color-stop( 100% , rgba(0,0,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(148,138,138,1.00) 0%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(148,138,138,1.00) 0%,rgba(0,0,0,1.00) 100%);
+	border-radius: 15px;
+	height: 80px;
+	clear: both;
+	margin-top: 60px;
+}
+
+.DivPaginasSeriesPeliculas {
+	border: 1px solid #000000;
+	display: inline-block;
+	width: 460px;
+	height: 200px;
+	margin-left: 12px;
+	margin-top: 12px;
+	border-radius: 5px;
+	background-color: #333333;
+	position: relative;
+	margin-bottom: 12px;
+}
+.DivDescripPeliculasSeries {
+	height: 200px;
+	display: inline-block;
+	position: absolute;
+	left: 155px;
+	width: 300px;
+}
+.DivDescripPeliculasSeries h3 {
+	color: #FFFFFF;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 20pt;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.DivDescripPeliculasSeries h4 {
+	color: #CCCCCC;
+	display: inline;
+	margin-right: 5px;
+}
+.DivDescripPeliculasSeries p {
+	display: inline;
+	text-align: justify;
+	color: #000000;
+}
+
+
+
+#NavSeriesPeliculas {
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#NavSeriesPeliculas ul {
+	text-decoration: none;
+	text-align: center;
+	list-style-type: none;
+	border-radius: 15px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(81,79,79,1.00)),color-stop( 100% , rgba(31,30,30,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
+}
+#NavSeriesPeliculas ul li{
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 5px;
+}
+#NavSeriesPeliculas ul li:hover{
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 5px;
+}
+#NavSeriesPeliculas ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#headerPeliculaSerieIndividual {
+	width: 977px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+
+#DivPeliculasSeriesIndividial {
+	width: 977px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #333333;
+	border-radius: 15px;
+	position: relative;
+}
+#ImgPeliculasSeriesIndividual {
+	height: 380px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+#DivDescripPeliculasSeriesIndividual {
+	position: absolute;
+	top: 10px;
+	left: 310px;
+	width: 650px;
+	height: 380px;
+}
+#DivDescripPeliculasSeriesIndividual h3 {
+	color: #FFFFFF;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 40pt;
+}
+#DivDescripPeliculasSeriesIndividual h4 {
+	display: inline;
+	color: #CCCCCC;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 15pt;
+	margin-right: 5px;
+}
+#DivDescripPeliculasSeriesIndividual p {
+	display: inline;
+	color: #000000;
+	text-align: justify;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 15pt;
+}
+#SpamEnlaces {
+}
+#html {
+	height: 100%;
+}
+#body {
+	position: relative;
+	overflow-y: auto;
+	height: 98%;
+}
