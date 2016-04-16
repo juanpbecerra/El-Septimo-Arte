@@ -9,18 +9,13 @@
 	padding-left: 0px;
 
 }
+
+/**Pagina Principal**/
+
 body {
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(138,130,130,1.00)),color-stop( 100% , rgba(37,34,34,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(138,130,130,1.00) 0%,rgba(37,34,34,1.00) 100%);
 	background-image: linear-gradient(180deg,rgba(138,130,130,1.00) 0%,rgba(37,34,34,1.00) 100%);
-}
-#BodySeriesPeliculasP {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 500px;
-	height: 1000px;
-	background-color: #666666;
 }
 
 #headerPrincipal {
@@ -79,7 +74,7 @@ body {
 	max-width: 1000px;
 }
 #DivEnlaceEncabezado {
-	width: 210px;
+	width: 230px;
 	text-align: center;
 	float: right;
 	margin-top: -25px;
@@ -127,13 +122,6 @@ body {
 	border-radius: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-#SectionSeriesPeliculas {
-	width: 977px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 70%;
-	position: relative;
 }
 #DivSectionSeriesPeliculas {
 	width: 977px;
@@ -249,6 +237,8 @@ body {
 	background-color: #333333;
 	position: relative;
 	margin-bottom: 12px;
+	overflow-y: hidden;
+	text-align: justify;
 }
 .DivDescripPeliculasSeries {
 	height: 200px;
@@ -256,13 +246,15 @@ body {
 	position: absolute;
 	left: 155px;
 	width: 300px;
+	bottom: 5px;
 }
 .DivDescripPeliculasSeries h3 {
 	color: #FFFFFF;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 	font-size: 20pt;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	text-transform: uppercase;
 }
 .DivDescripPeliculasSeries h4 {
 	color: #CCCCCC;
@@ -320,6 +312,10 @@ body {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+#NavPaginaSeleccionada {
+	color:#FFF;background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+}
+
 #headerPeliculaSerieIndividual {
 	width: 977px;
 	margin-right: auto;
@@ -368,8 +364,6 @@ body {
 	text-align: justify;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size: 15pt;
-}
-#SpamEnlaces {
 }
 #html {
 	height: 100%;
