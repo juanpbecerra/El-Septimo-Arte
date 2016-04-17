@@ -1,14 +1,11 @@
 * {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
 
 }
+
 
 /**Pagina Principal**/
 
@@ -372,4 +369,38 @@ body {
 	position: relative;
 	overflow-y: auto;
 	height: 98%;
+}
+#SectionPrincipal {
+}
+#TablaElacesSeriesPeliculas {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FF9900;
+	text-align: center;
+}
+#TablaElacesSeriesPeliculas td {
+	height: 35px;
+
+}
+
+#TablaElacesSeriesPeliculas a {
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20%;
+	display: inline-block;
+	color: #FF9900;
+	text-decoration: none;
+}
+#TablaElacesSeriesPeliculas a:hover {
+	color: #000000;
+}
+#TablaElacesSeriesPeliculas a:active {
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(51,51,51,1.00)),color-stop( 100% , rgba(51,51,51,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
 }
