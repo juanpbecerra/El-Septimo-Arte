@@ -117,7 +117,7 @@ body {
 	font-size: 30pt;
 }
 #DivDescripcionPelicula p {
-	color: #FFFFFF;
+	color: #CCCCCC;
 	text-align: justify;
 	margin-top: 0px;
 	margin-left: 5px;
@@ -258,6 +258,7 @@ body {
 	left: 155px;
 	width: 300px;
 	bottom: 5px;
+	top: 10px;
 }
 .DivDescripPeliculasSeries h3 {
 	color: #FFFFFF;
@@ -268,14 +269,14 @@ body {
 	text-transform: uppercase;
 }
 .DivDescripPeliculasSeries h4 {
-	color: #CCCCCC;
+	color: #FFFFFF;
 	display: inline;
 	margin-right: 5px;
 }
 .DivDescripPeliculasSeries p {
 	display: inline;
 	text-align: justify;
-	color: #000000;
+	color: #CCCCCC;
 }
 
 
@@ -370,17 +371,17 @@ body {
 }
 #DivDescripPeliculasSeriesIndividual h4 {
 	display: inline;
-	color: #CCCCCC;
+	color: #FFFFFF;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size: 15pt;
 	margin-right: 5px;
 }
 #DivDescripPeliculasSeriesIndividual p {
 	display: inline;
-	color: #000000;
 	text-align: justify;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size: 15pt;
+	color: #CCCCCC;
 }
 #html {
 	height: 100%;
