@@ -20,7 +20,7 @@ header {
 	height: 50px;
 	width: 100%;
 	opacity: 0.95;
-	min-width: 620px;
+	min-width: 700px;
 	background-repeat: repeat-x;
 	background-image: url(Imagenes/Cabecera.jpg);
 	background-size: auto 100%;
@@ -41,7 +41,6 @@ section {
 	margin-left: auto;
 	height: 50px;
 	margin-right: auto;
-	max-width: 1000px;
 }
 #ImagenLogo {
 	width: 90px;
@@ -60,7 +59,7 @@ section {
 	margin-top: -52px;
 }
 #DivEnlaceEncabezado {
-	width: 270px;
+	width: 300px;
 	text-align: center;
 	float: right;
 	margin-top: -25px;
