@@ -3,11 +3,7 @@
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
-
 }
-
-
-/**Pagina Principal**/
 
 body {
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(138,130,130,1.00)),color-stop( 100% , rgba(37,34,34,1.00)));
@@ -15,38 +11,34 @@ body {
 	background-image: linear-gradient(180deg,rgba(138,130,130,1.00) 0%,rgba(37,34,34,1.00) 100%);
 }
 
-#headerPrincipal {
-	position: relative;
-	width: 977px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 60px;
-	height: 431px;
-	margin-bottom: 10px;
-
-}
-#DivPeliculaPrincipal   {
-	width: 977px;
-	background-image: url('Imagenes/PeliculaP.jpg');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	height: 431px;
-	position: absolute;
-	border-radius: 1% / 2.5%;
-}
-
-#DivdeEncabezado {
+header {
 	position: fixed;
 	height: 50px;
 	width: 100%;
 	opacity: 0.95;
-	min-width: 550px;
+	min-width: 620px;
 	background-repeat: repeat-x;
 	background-image: url(Imagenes/Cabecera.jpg);
 	background-size: auto 100%;
 	top: 0px;
 	left: 0px;
 	z-index: 1;
+}
+section {
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	height: 100%;
+	position: relative;
+}
+/**Encabezado de todas las Pag**/
+
+#DivLogoNombre {
+	margin-left: auto;
+	height: 50px;
+	margin-right: auto;
+	max-width: 1000px;
 }
 #ImagenLogo {
 	width: 90px;
@@ -64,14 +56,8 @@ body {
 	margin-left: 90px;
 	margin-top: -52px;
 }
-#DivLogoNombre {
-	margin-left: auto;
-	height: 50px;
-	margin-right: auto;
-	max-width: 1000px;
-}
 #DivEnlaceEncabezado {
-	width: 230px;
+	width: 260px;
 	text-align: center;
 	float: right;
 	margin-top: -25px;
@@ -85,26 +71,44 @@ body {
 #DivEnlaceEncabezado a:hover {
 	color: #FF9933;
 }
-#DivDescripcionPelicula {
+
+
+
+
+
+
+/**Pagina Index**/
+
+#DivPeliculaPrincipal{
+	width: 977px;
+	height: 431px;
+	background-image: url('Imagenes/PeliculaP.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 1% / 2.5%;
+	position: relative;
+}
+#DivDescripcionPeliculaPrincipal{
 	background-color: #000000;
 	opacity: 0.8;
 	width: 490px;
-	height: 216px;
-	margin-left: 5%;
-	margin-top: 18%;
+	height: 180px;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	text-align: justify;
 	border-radius: 8px / 4px;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
 }
-#DivDescripcionPelicula h2 {
+#DivDescripcionPeliculaPrincipal h2 {
 	text-align: center;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-variant: normal;
 	font-style: italic;
 	margin-bottom: 3px;
 }
-#DivDescripcionPelicula h2 a{
+#DivDescripcionPeliculaPrincipal h2 a{
 	text-align: center;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-variant: normal;
@@ -116,14 +120,15 @@ body {
 	text-decoration: none;
 	font-size: 30pt;
 }
-#DivDescripcionPelicula p {
+#DivDescripcionPeliculaPrincipal p{
 	color: #CCCCCC;
 	text-align: justify;
 	margin-top: 0px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
-#SectionPrincipal {
+
+#DivPeliculasSeriesAnimes {
 	width: 977px;
 	margin-left: auto;
 	margin-right: auto;
@@ -135,20 +140,26 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#DivSectionSeriesPeliculas {
-	width: 977px;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(180,172,172,1.00)),color-stop( 100% , rgba(73,65,65,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
-	border-radius: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	height: 70%;
-	margin-bottom: 10px;
+.APeliculasSeriesAnimes{
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	margin-left: 24.425px;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
+	display: inline-block;
+	padding-bottom: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15pt;
 }
-.DivSeriesPeliculas {
+.APeliculasSeriesAnimes:hover {
+	color: #FF9900;
+}
+.DivUltimasPeliculasSeriesAnimes{
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
@@ -160,50 +171,7 @@ body {
 	margin-top: -8px;
 	margin-bottom: 10px;
 }
-.APeliculasSeries {
-	background-color: #232323;
-	border-radius: 7px 5px 5px;
-	margin-left: 24.425px;
-	text-align: center;
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-right: 80px;
-	padding-left: 80px;
-	display: inline-block;
-	padding-bottom: 15px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 15pt;
-}
-#SpamEnlaces {
-	background-color: #232323;
-	border-radius: 7px 5px 5px;
-	margin-left: 24.425px;
-	text-align: center;
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-right: 80px;
-	padding-left: 80px;
-	display: inline-block;
-	padding-bottom: 15px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 15pt;
-}
-.APeliculasSeries:hover {
-	color: #FF9900;
-
-}
-
-
-.ImgPeliculasSeries:hover {
-	-webkit-box-shadow: 3px 3px 3px #999999;
-	box-shadow: 3px 3px 3px #999999;
-}
-
-.ImgPeliculasSeries {
+.ImgLinkAPaginaDePeliculaSerieAnime{
 	height: 188px;
 	margin-top: 7px;
 	margin-left: 6px;
@@ -211,18 +179,21 @@ body {
 	-webkit-box-shadow: 0px 0px 0px #999999;
 	box-shadow: 0px 0px 0px #999999;
 }
-.ImgPeliculasSeries:active {
+.ImgLinkAPaginaDePeliculaSerieAnime:hover{
+	-webkit-box-shadow: 3px 3px 3px #999999;
+	box-shadow: 3px 3px 3px #999999;
+}
+.ImgLinkAPaginaDePeliculaSerieAnime:active{
 	-webkit-box-shadow: 0px 0px 0px #CCCCCC;
 	box-shadow: 0px 0px 0px #CCCCCC;
 }
-#headerPeliculasSeries {
-	width: 977px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	height: 100%;
-}
-#headerPeliculasSeries h2 {
+
+
+
+
+/**Pagina Principal de las Peliculas Series y Animes**/
+
+#NombreDePaginaPeliculaSerieAnime {
 	color: #FFCC00;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-weight: bold;
@@ -234,10 +205,66 @@ body {
 	border-radius: 15px;
 	height: 80px;
 	clear: both;
-	margin-top: 60px;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
-
+#NavSeriesPeliculasAnimes{
+	width: 977px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#NavSeriesPeliculasAnimes ul{
+	text-decoration: none;
+	text-align: center;
+	list-style-type: none;
+	border-radius: 15px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(81,79,79,1.00)),color-stop( 100% , rgba(31,30,30,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
+}
+#NavSeriesPeliculasAnimes ul li{
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 5px;
+}
+#NavSeriesPeliculasAnimes ul li:hover{
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 5px;
+}
+#NavSeriesPeliculasAnimes ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#NavPaginaSeleccionada {
+	color:#FFF;background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
+}
+#DivSectionSeriesPeliculas {
+	width: 977px;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(180,172,172,1.00)),color-stop( 100% , rgba(73,65,65,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(180,172,172,1.00) 0%,rgba(73,65,65,1.00) 100%);
+	border-radius: 15px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 600px;
+	min-height: 400px;
+}
 .DivPaginasSeriesPeliculas {
 	display: inline-block;
 	width: 460px;
@@ -281,61 +308,9 @@ body {
 
 
 
-#NavSeriesPeliculas {
-	width: 977px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#NavSeriesPeliculas ul {
-	text-decoration: none;
-	text-align: center;
-	list-style-type: none;
-	border-radius: 15px;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(81,79,79,1.00)),color-stop( 100% , rgba(31,30,30,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(81,79,79,1.00) 0%,rgba(31,30,30,1.00) 100%);
-}
-#NavSeriesPeliculas ul li{
-	display: inline-block;
-	padding-top: 2px;
-	padding-right: 5px;
-	padding-bottom: 2px;
-	padding-left: 5px;
-	margin-bottom: 3px;
-	margin-top: 3px;
-	border-radius: 5px;
-}
-#NavSeriesPeliculas ul li:hover{
-	display: inline-block;
-	padding-top: 2px;
-	padding-right: 5px;
-	padding-bottom: 2px;
-	padding-left: 5px;
-	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));
-	background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
-	background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
-	margin-bottom: 3px;
-	margin-top: 3px;
-	border-radius: 5px;
-}
-#NavSeriesPeliculas ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-#NavPaginaSeleccionada {
-	color:#FFF;background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);background-image: linear-gradient(180deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
-}
-
-#headerPeliculaSerieIndividual {
-	width: 977px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 60px;
-	margin-bottom: 10px;
-}
-
+/*********************************************************/
+/**********Pagina Ver Peliculas, Series o Anime***********/
+/*********************************************************/
 #DivPeliculasSeriesIndividial {
 	width: 977px;
 	height: 400px;
@@ -346,7 +321,6 @@ body {
 	position: relative;
 	overflow-y: hidden;
 	overflow-x: hidden;
-	/* [disabled]text-align: justify; */
 }
 #ImgPeliculasSeriesIndividual {
 	height: 380px;
@@ -383,16 +357,33 @@ body {
 	font-size: 15pt;
 	color: #CCCCCC;
 }
-#html {
-	height: 100%;
+#SpamEnlaces {
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	margin-left: 24.425px;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-right: 80px;
+	padding-left: 80px;
+	display: inline-block;
+	padding-bottom: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 15pt;
 }
-#body {
-	position: relative;
-	overflow-y: auto;
-	height: 98%;
-}
-#SectionPrincipal {
-}
+
+
+
+
+
+
+
+
+
+
+
 #TablaElacesSeriesPeliculas {
 	margin-top: 10px;
 	margin-left: auto;
@@ -402,9 +393,7 @@ body {
 }
 #TablaElacesSeriesPeliculas td {
 	height: 35px;
-
 }
-
 #TablaElacesSeriesPeliculas a {
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(126,125,125,1.00)),color-stop( 100% , rgba(18,17,17,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(126,125,125,1.00) 0%,rgba(18,17,17,1.00) 100%);
@@ -424,4 +413,8 @@ body {
 	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(51,51,51,1.00)),color-stop( 100% , rgba(51,51,51,1.00)));
 	background-image: -webkit-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
 	background-image: linear-gradient(180deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
+}
+#PieDePagina {
+	width: 977px;
+	height: 100px;
 }
