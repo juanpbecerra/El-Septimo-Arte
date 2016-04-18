@@ -3,6 +3,10 @@
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
 }
 
 body {
@@ -29,7 +33,6 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-	height: 100%;
 	position: relative;
 }
 /**Encabezado de todas las Pag**/
@@ -57,7 +60,7 @@ section {
 	margin-top: -52px;
 }
 #DivEnlaceEncabezado {
-	width: 260px;
+	width: 270px;
 	text-align: center;
 	float: right;
 	margin-top: -25px;
