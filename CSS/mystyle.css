@@ -76,11 +76,18 @@ section {
 
 
 
+/********************************/
+/*********Pie de Pag*************/
+/********************************/
+#PieDePagina {
+	width: 977px;
+	height: 100px;
+}
 
 
-
-/**Pagina Index**/
-
+/************************/
+/******Pagina Index******/
+/************************/
 #DivPeliculaPrincipal{
 	width: 977px;
 	height: 431px;
@@ -375,7 +382,16 @@ section {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 15pt;
 }
-
+.DivVerPeliculasSeriesAnime{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #232323;
+	border-radius: 7px 5px 5px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	min-height: 200px;
+}
 
 
 
@@ -416,7 +432,40 @@ section {
 	background-image: -webkit-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
 	background-image: linear-gradient(180deg,rgba(51,51,51,1.00) 0%,rgba(51,51,51,1.00) 100%);
 }
-#PieDePagina {
-	width: 977px;
-	height: 100px;
+
+
+
+#TablaEnlacesSeries {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FF9900;
+	text-align: center;
+}
+#TablaEnlacesSeries td {
+	text-align: justify;
+	height: 35px;
+}
+#TablaEnlacesSeries td a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#TablaEnlacesSeries td a:hover {
+	color: #000000;
+}
+
+#TablaEnlacesSeries tr td div{
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+#TablaEnlacesSeries tr td div img{
+	margin-left: 20px;
+	margin-right: 20px;
 }
